@@ -17,6 +17,7 @@ def home(requset):
     }
     return render(requset, 'blog/home.html', contexts)
 
+# Class-based view of home view function
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'    # <app>/<model>_<viewtype>.html

@@ -14,5 +14,6 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    # return the full url to that route as a string
     def get_absolute_url(self):
         return reverse('post-detail', kwargs={'pk': self.pk})
